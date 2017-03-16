@@ -1,0 +1,25 @@
+                <!--START: FRAME_CATEGORY-->
+                <ul>
+                  <li><a href="index.html"><i class="fontawesome-home"></i></a></li>
+                  <!--START: CATEGORIES-->
+                  <li>
+                    <!--START: CATEGORY_FORMAT-->
+                    <a href="view_category.asp?cat=CATID">CATEGORY</a>
+                    <!--END: CATEGORY_FORMAT-->
+                    <ul>
+                      <!--START: SUB_CATEGORY_FORMAT-->
+                      <li><a href="view_category.asp?cat=CATID">CATEGORY</a></li>
+                      <!--END: SUB_CATEGORY_FORMAT-->
+                    </ul>
+                  </li>
+                  <!--END: CATEGORIES-->
+                </ul>
+                <!--END: FRAME_CATEGORY-->
+
+                <div class="main-menu-cart">
+                  <a href="view_cart.asp"><i class="diamondicon-cart"></i> ([ITEMSINCART]) ITEMS</a>
+                  <a href="checkout_one.asp"><i class="fontawesome-user"></i></a>
+                  <a href="search.asp" class="main-menu-search"><i class="fontawesome-search"></i></a>
+                </div>
+
+                <div style="clear: both;"></div>

@@ -1,0 +1,150 @@
+<section id="home">
+    <!--START: home_carousel-->
+    <link rel="stylesheet" href="/assets/templates/common-html5/css/flexslider.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="/assets/templates/common-html5/js/jquery.flexslider-min.js"></script>
+
+    <div id="homeCarousel" class="flexslider">
+        <ul class="slides">
+            <!--START: carousel-->
+            <li><a href="[link]"><img src="[image]" alt="" /></a></li>
+            <!--END: carousel-->
+        </ul>
+    </div>
+
+    <script type="text/javascript" charset="utf-8">
+    jQuery(document).ready(function () {
+        jQuery('#homeCarousel').flexslider({
+            animation: "[hc_effect]",
+            slideshowSpeed: [hc_delay],
+            controlNav: false,
+            keyboard: false
+        });
+    });
+    </script>
+    <!--END: home_carousel-->
+
+    <div class="home-best-sellers">
+      <h2>BEST SELLERS</h2>
+
+      <a href="Contour-_c_47.html"><img src="assets/images/spiff-contour.jpg" alt=""></a>
+      <a href="High-Definiton-Microfinish-Pressed-Powder-_p_232.html"><img src="assets/images/spiff-powder.jpg" alt=""></a>
+      <a href="makeup-palettes"><img src="assets/images/spiff-palettes.jpg" alt=""></a>
+    </div>
+
+  </div>
+<div class="home-instagram">
+  <h2>#lunatickcosmeticlabs</h2>
+
+  <script type="text/javascript" src="assets/templates/[template]/js/instafeed.min.js"></script>
+  <script type="text/javascript">
+    var userFeed = new Instafeed({
+      get: 'user',
+      userId: '245041724',
+      accessToken: '245041724.800ce41.6b13b72f04df41c881279c3b507b1e5a',
+      limit: 8,
+      resolution: 'standard_resolution',
+      template: '<a href="{{link}}" style="background-image: url({{image}});"" target="new"></a>'
+    });
+    userFeed.run();
+  </script>
+  <div id="instafeed" class="site-width"></div>
+</div>
+  <div class="site-width">
+
+    <!--START: CATEGORY_HEADER-->
+    <div class="category-header" id="homeHeader">[CONTENT]</div>
+    <!--END: CATEGORY_HEADER-->
+
+    <!--START: FEATURE_MENU-->
+    <div class="row row-fullwidth-background module-product-grid-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-lg-12">
+                    <div class="row-title-wrapper">
+                        <h3 class="heading-1">[category_Header-specials]</h3>
+                    </div>
+                </div>
+            </div>
+            <!--START: CATEGORY_ITEMS-->
+            <!--START: ITEM_TEMPLATE_0-->
+            <div class="product-wrapper item-template-0">
+
+                <div class="product-image">
+                    <a href="product.asp?itemid=[catalogid]">
+                        <img id="qv_[catalogid]" class="product-image-main" src="[THUMBNAIL]" alt="[name]">
+                    </a>
+
+                    <div class="product-background-overlay"></div>
+
+                    <div class="btn-container">
+                        <div class="btn-wrapper" style="display: none;">
+                            <a class="btn btn-quickview" href="product.asp?itemid=[catalogid]" data-quickview-url="product.asp?lt_c=1&amp;itemid=[catalogid]&amp;qv=1&amp;">
+                                <i class="fontawesome-search"></i>
+                                <span class="tooltip">Quickview</span>
+                            </a>
+                        </div>
+                        <div class="btn-wrapper">
+                            <a class="btn btn-details" href="product.asp?itemid=[catalogid]">
+                                <i class="fontawesome-link"></i>
+                                <span class="tooltip">Details</span>
+                            </a>
+                        </div>
+                        <div class="btn-wrapper">
+                            <a class="btn btn-addtocart" href="product.asp?itemid=[catalogid]" data-addtocart-url="add_cart.asp?quick=1&amp;item_id=[catalogid]">
+                                <i class="diamondicon-cart"></i>
+                                <span class="tooltip">[product_addtocart]</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-details">
+                    <!--START: product_review-->
+                    <!--START: product_review_average-->
+                    <span class="product-review-icons-container" data-rating-value="[review_average]">
+                        <span class="product-review-icons product-review-icons-0"><i class="product-review-icon fontawesome-star-o"></i><i class="product-review-icon fontawesome-star-o"></i><i class="product-review-icon fontawesome-star-o"></i><i class="product-review-icon fontawesome-star-o"></i><i class="product-review-icon fontawesome-star-o"></i></span>
+                        <span class="product-review-icons product-review-icons-1"><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star-o"></i><i class="product-review-icon fontawesome-star-o"></i><i class="product-review-icon fontawesome-star-o"></i><i class="product-review-icon fontawesome-star-o"></i></span>
+                        <span class="product-review-icons product-review-icons-2"><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star-o"></i><i class="product-review-icon fontawesome-star-o"></i><i class="product-review-icon fontawesome-star-o"></i></span>
+                        <span class="product-review-icons product-review-icons-3"><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star-o"></i><i class="product-review-icon fontawesome-star-o"></i></span>
+                        <span class="product-review-icons product-review-icons-4"><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star-o"></i></span>
+                        <span class="product-review-icons product-review-icons-5"><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star"></i></span>
+                        <span href="#" class="product-review-count">([review_count])</span>
+                    </span>
+                    <!--END: product_review_average-->
+                    <!--END: product_review-->
+
+                    <div class="product-title">
+                        <a href="product.asp?itemid=[catalogid]">[name]</a>
+                    </div>
+
+                    <div class="product-price">
+                        <!--START: ITEMPRICE-->
+                        <span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE]
+                        <!--END: ITEMPRICE-->
+                        <!--START: SALEPRICE-->
+                        <del class="price2">[ITEMPRICE]&nbsp;</del>
+                        <span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE]
+                        <span class="badge badge-sale">
+                            <span class="badge-text">Sale</span>
+                        </span>
+                        <!--END: SALEPRICE-->
+                    </div>
+
+                    <div class="status"><!--START: product_availability-->[availability] <!--END: product_availability--><!--START: freeshippingblock-->[freeshipping]<!--END: freeshippingblock--></div>
+
+                    <div class="product-description">
+                        [description]
+                    </div>
+                </div>
+
+            </div>
+            <!--END: ITEM_TEMPLATE_0-->
+            <!--END: CATEGORY_ITEMS-->
+        </div>
+    </div>
+    <!--END: FEATURE_MENU-->
+
+    <!--START: CATEGORY_FOOTER-->
+    <div class="category-footer" id="homeFooter">[CONTENT]</div>
+    <!--END: CATEGORY_FOOTER-->
+</section>

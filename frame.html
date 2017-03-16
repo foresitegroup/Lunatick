@@ -1,0 +1,401 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="assets/images/favicon.png" rel="shortcut icon">
+    <title>[TITLE]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    [META]
+    <script type="text/javascript" src="assets/templates/common-html5/js/modernizr.min.js"></script>
+    <script type="text/javascript" src="assets/templates/common-html5/js/utilities.js"></script>
+    <link rel="stylesheet" href="assets/templates/common-html5/quicksearch/quicksearch.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/templates/common-html5/css/layout.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/templates/common-html5/css/responsive.css" type="text/css" media="screen" />
+
+    <link rel="stylesheet" href="assets/templates/[template]/css/bootstrap.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/templates/[template]/css/material.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/templates/[template]/css/fontawesome.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/templates/[template]/css/entypo.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/templates/[template]/css/diamondicon.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/templates/[template]/css/owl.core.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/templates/[template]/css/[stylesheet]" type="text/css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Poppins:400,500,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/templates/common-html5/css/fontello.css" />
+
+    <!--START: FRAME_RSSFEEDS -->
+    <link rel="alternate" type="application/rss+xml" title="Featured Items (RSS 2.0)" href="[store_url]/rss.asp?type=home" />
+    <link rel="alternate" type="application/rss+xml" title="Products On Sale (RSS 2.0)" href="[store_url]/rss.asp?type=onsale" />
+    <link rel="alternate" type="application/rss+xml" title="New Releases (RSS 2.0)" href="[store_url]/rss.asp?type=newreleases" />
+    <link rel="alternate" type="application/rss+xml" title="Best Sellers (RSS 2.0)" href="[store_url]/rss.asp?type=bestsellers" />
+    <link rel="alternate" type="application/rss+xml" title="Latest Blog Posts (RSS 2.0)" href="[store_url]/rss.asp?type=blog" />
+    <!--END: FRAME_RSSFEEDS -->
+
+    <script type="text/javascript">
+    if (typeof jQuery == 'undefined') {
+        document.write("<script type=\"text/javascript\" src=\"/assets/templates/common-html5/js/jquery.min.js\"></" + "script>");
+    }
+    </script>
+    <script type="text/javascript">
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+    if ( inIframe() ) {
+        document.write("<script type=\"text/javascript\" src=\"/assets/templates/[template]/js/iframeResizer.contentWindow.min.js\"></" + "script>");
+    }
+    </script>
+</head>
+<body>
+
+    <div class="page-wrap">
+        <div class="page-wrap-inner">
+            <header class="ll-header">
+              <div class="site-width">
+                <div class="header-shipping">FREE SHIPPING TODAY</div>
+
+                <ul class="top-menu">
+                  <li><a href="wishlist_prelogin.asp" target="[link_target]">WISH LIST</a></li>
+                  <li><a href="register.asp?cg=0" target="[link_target]">CREATE ACCOUNT</a></li>
+                  <li><a href="myaccount.asp" target="[link_target]">LOG IN</a></li>
+                </ul>
+
+                <div id="logo">
+                  <!--START: global_header-->
+                  <h1 class="store-name">[storename]</h1>
+                  <h3 class="store-slogan">[storeslogan]</h3>
+                  <!--END: global_header-->
+                </div>
+              </div>
+            </header>
+
+            <div class="ll-main-menu">
+              <div class="site-width">
+                <input type="checkbox" id="show-menu" role="button">
+                <label for="show-menu" id="menu-toggle"></label>
+                <!--START: FRAME_CATEGORY-->
+                <ul>
+                  <li><a href="index.html"><i class="fontawesome-home"></i></a></li>
+                  <!--START: CATEGORIES-->
+                  <li>
+                    <!--START: CATEGORY_FORMAT-->
+                    <a href="view_category.asp?cat=CATID">CATEGORY</a>
+                    <!--END: CATEGORY_FORMAT-->
+                    <ul>
+                      <!--START: SUB_CATEGORY_FORMAT-->
+                      <li><a href="view_category.asp?cat=CATID">CATEGORY</a></li>
+                      <!--END: SUB_CATEGORY_FORMAT-->
+                    </ul>
+                  </li>
+                  <!--END: CATEGORIES-->
+                </ul>
+                <!--END: FRAME_CATEGORY-->
+
+                <div class="main-menu-cart">
+                  <a href="view_cart.asp"><i class="diamondicon-cart"></i> ([ITEMSINCART]) ITEMS</a>
+                  <a href="checkout_one.asp"><i class="fontawesome-user"></i></a>
+                  <a href="search.asp" class="main-menu-search"><i class="fontawesome-search"></i></a>
+                </div>
+
+                <div style="clear: both;"></div>
+              </div>
+            </div>
+
+            <div class="full-width-slider-container">
+
+            </div>
+
+            <div class="full-width-page-title-container" style="display: none;">
+
+            </div>
+
+            <div id="mainContent">
+              <div class="site-width">MIDDLE</div>
+            </div>
+
+            <footer id="footer" class="sticky-footer" role="contentinfo">
+                <!--START: FRAME_MAILLIST-->
+                <div class="newsletter-footer">
+                    <div class="container">
+                        <div id="mailistBox">
+                            <form method="post" name="mailing" action="mailing_list.asp?action=add" onsubmit="return mailing_list();" class="form-newsletter">
+                                <div class="row">
+                                    <div class="col-xs-12 form-group-label">
+                                        <label class="col-xs-12 form-control-label h3">[frame_mailinglist]</label>
+                                    </div>
+                                    <div class="col-xs-12 form-group-email">
+                                        <div class="form-group-email-wrapper">
+                                            <input type="text" name="email" value="" placeholder="Email Address" class="form-control" />
+                                            <div class="newsletter-options">
+                                                <input type="radio" name="subscribe" value="1" checked="checked" />
+                                                <span class="menu-text">[mailinglist_subscribe]</span>
+                                                <input type="radio" name="subscribe" value="0" />
+                                                <span class="menu-text">[mailinglist_unsubscribe]</span>
+                                            </div>
+                                            <div class="js-newsletter-options">
+                                                <span class="newsletter-option-label active" data-newsletter-option="subscribe">[mailinglist_subscribe]</span>
+                                                <span class="newsletter-option-label" data-newsletter-option="unsubscribe">[mailinglist_unsubscribe]</span>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item" data-newsletter-option="subscribe">
+                                                        <a href="#" class="nav-link" data-newsletter-option="subscribe">[mailinglist_subscribe]</a>
+                                                    </li>
+                                                    <li class="nav-item" data-newsletter-option="unsubscribe">
+                                                        <a href="#" class="nav-link" data-newsletter-option="unsubscribe">[mailinglist_unsubscribe]</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 form-group-action">
+                                        <input type="submit" name="www" value="[mailinglist_button]" class="btn btn-primary btn-sm" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--END: FRAME_MAILLIST-->
+
+                <!-- Begin primary-footer -->
+                <div class="primary-footer">
+                  <div class="site-width">
+                    <div id="globalFooter" class="row grid-gutter-vertical">
+                      [GLOBAL_FOOTER]
+                    </div>
+
+                    <div class="footer-cols">
+                      <div id="about-us">
+                        <h3>ABOUT US</h3>
+                        Be the change you want to see! We accept and love everybody no matter your beauty background, sexuality or race. Our cosmetics are geared for the alternative ladies &amp; gentlemen, stage performers, makeup artists, special effects makeup artists &amp; everybody in between.
+                      </div>
+
+                      <div id="cruelty-free">
+                        <h3>CRUELTY FREE</h3>
+                        <ul>
+                          <li>100% Vegan</li>
+                          <li>Talc Free</li>
+                          <li>Paraben Free</li>
+                          <li>Cruelty Free</li>
+                        </ul>
+                        Proudly Vegan &amp; Cruelty Free approved by Logical Harmony &amp; PETA. 
+                      </div>
+
+                      <div id="our-service">
+                        <h3>OUR SERVICE</h3>
+                        <ul>
+                          <!--START: FRAME_MENU-->
+                          <!--START: menuitems_view-->
+                          <!--START: TOP_LINK_FORMAT-->
+                          <li id="page[link_id]"><a href="infopage.asp?page=[link_id]" target="[link_target]">[link_name]</a></li>
+                          <!--END: TOP_LINK_FORMAT-->
+                          <!--END: menuitems_view-->
+                          <!--END: FRAME_MENU-->
+                        </ul>
+                      </div>
+
+                      <div id="my-account">
+                        <h3>MY ACCOUNT</h3>
+                        <ul>
+                          <li><a href="myaccount.asp">My Account</a></li>
+                          <li><a href="ordertracking.asp">Order History</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End primary-footer -->
+
+                <!-- Begin secondary-footer -->
+                <div class="secondary-footer">
+                    <div class="container">
+                        <div class="row grid-gutter-vertical">
+                            <div class="col-xs-12 secondary-footer-left">
+                                <p>[frame_copyright1]</p>
+                            </div>
+
+                            <div class="col-xs-12 secondary-footer-right">
+                                <div class="social-icons">
+                                    <!--START: social_link_facebook--><a href="[social_link_facebook_url]" class="facebook" target="_blank" title="Like Us on Facebook"><i class="icon-facebook"></i></a><!--END: social_link_facebook-->
+                                    <!--START: social_link_twitter--><a href="[social_link_twitter_url]" class="twitter" target="_blank" title="Follow Us on Twitter"><i class="icon-twitter"></i></a><!--END: social_link_twitter-->
+                                    <!--START: social_link_googleplus--><a href="[social_link_googleplus_url]" class="gplus" target="_blank" title="Follow Us on Google+"><i class="icon-gplus"></i></a><!--END: social_link_googleplus-->
+                                    <!--START: social_link_youTube--><a href="[social_link_youTube_url]" class="youtube" target="_blank" title="Subscribe to Our Channel"><i class="icon-youtube-play"></i></a><!--END: social_link_youTube-->
+                                    <!--START: social_link_pinterest--><a href="[social_link_pinterest_url]" class="pinterest" target="_blank" title="Follow Us on Pinterest"><i class="icon-pinterest-circled"></i></a><!--END: social_link_pinterest-->
+                                    <!--START: social_link_instagram--><a href="[social_link_instagram_url]" class="instagram" target="_blank" title="Follow Us on Instagram"><i class="icon-instagramm"></i></a><!--END: social_link_instagram-->
+                                    <!--START: social_link_tumblr--><a href="[social_link_tumblr_url]" class="tumblr" target="_blank" title="Follow Us on Tumblr"><i class="icon-tumblr"></i></a><!--END: social_link_tumblr-->
+                                    <!--START: social_link_blog--><a href="[social_link_blog_url]" class="blog" target="_blank" title="Subscribe to our Blog"><i class="icon-rss"></i></a><!--END: social_link_blog-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End secondary-footer -->
+            </footer>
+        </div>
+    </div>
+
+    <!--START: FRAME_MAILLIST-->
+    <div class="modal-container" data-modal-id="newsletter">
+        <div class="modal-vertical-align-container">
+            <div class="modal-vertical-align-wrapper">
+                <div class="modal-dialog modal-md" role="document">
+                    <div class="modal-wrapper">
+                        <div class="modal-close"></div>
+                        <h3 class="newletter-popup-title">[frame_mailinglist]</h3>
+                        <div class="newletter-popup-description">[mailinglist_text]</div>
+
+                        <form method="post" name="mailing" action="mailing_list.asp?action=add" onsubmit="return mailing_list();" class="form-newsletter">
+                            <div class="form-group-email">
+                                <div class="form-group-email-wrapper">
+                                    <input type="text" name="email" value="" placeholder="Email Address" class="form-control" />
+                                    <div class="newsletter-options">
+                                        <input type="radio" name="subscribe" value="1" checked="checked" />
+                                        <span class="menu-text">[mailinglist_subscribe]</span>
+                                        <input type="radio" name="subscribe" value="0" />
+                                        <span class="menu-text">[mailinglist_unsubscribe]</span>
+                                    </div>
+                                    <div class="js-newsletter-options">
+                                        <span class="newsletter-option-label active" data-newsletter-option="subscribe">[mailinglist_subscribe]</span>
+                                        <span class="newsletter-option-label" data-newsletter-option="unsubscribe">[mailinglist_unsubscribe]</span>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item" data-newsletter-option="subscribe">
+                                                <a href="#" class="nav-link" data-newsletter-option="subscribe">[mailinglist_subscribe]</a>
+                                            </li>
+                                            <li class="nav-item" data-newsletter-option="unsubscribe">
+                                                <a href="#" class="nav-link" data-newsletter-option="unsubscribe">[mailinglist_unsubscribe]</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-action">
+                                <input type="submit" name="www" value="[mailinglist_button]" class="btn btn-primary btn-sm" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END: FRAME_MAILLIST-->
+
+    <div class="modal-container" data-modal-id="search">
+        <div class="modal-vertical-align-container">
+            <div class="modal-vertical-align-wrapper">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-wrapper">
+                        <div class="modal-close"></div>
+                        <!--START: FRAME_SEARCH-->
+                        <div id="searchBox">
+                            <form method="get" name="searchForm" class="search-bar" action="search.asp">
+                                <span class="search-icon"><i class="fontawesome-search"></i></span>
+                                <input type="text" id="searchlight" class="form-control" name="keyword" value="" placeholder="[frame_search]" />
+                                <input class="btn btn-primary btn-sm" type="submit" name="search" value="[frame_search]" />
+                            </form>
+                        </div>
+                        <!--END: FRAME_SEARCH-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container" data-modal-id="quickcart">
+        <div class="modal-vertical-align-container">
+            <div class="modal-vertical-align-wrapper">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-wrapper">
+                        <div class="modal-close"></div>
+                        <h3 class="modal-title">[viewcart_quick-title]</h3>
+                        <div class="modal-content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container" data-modal-id="quickview">
+        <div class="modal-vertical-align-container">
+            <div class="modal-vertical-align-wrapper">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-wrapper">
+                        <div class="modal-close"></div>
+                        <div class="modal-content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container" data-modal-id="custom-modal">
+        <div class="modal-vertical-align-container">
+            <div class="modal-vertical-align-wrapper">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-wrapper">
+                        <div class="modal-close"></div>
+                        <div class="modal-content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-backdrop"></div>
+
+    <!--START: quicksearch-->
+    <script type="text/javascript" src="assets/templates/common-html5/quicksearch/jquery.quicksearch.js"></script>
+    <script type="text/javascript">
+    jQuery(function() {
+        jQuery('#searchlight').searchlight('/search_quick.asp');
+    });
+    </script>
+    <!--END: quicksearch-->
+
+    <script type="text/javascript" src="assets/templates/[template]/js/jquery-cookie.js"></script>
+    <script type="text/javascript" src="assets/templates/[template]/js/iframeResizer.min.js"></script>
+    <script type="text/javascript" src="assets/templates/[template]/js/owl.carousel.js"></script>
+    <script type="text/javascript" src="assets/templates/[template]/js/owl.navigation.js"></script>
+    <script type="text/javascript" src="assets/templates/[template]/js/functions.js"></script>
+    <div class="stats">
+        <!--START: 3dcart stats-->
+        <script type="text/javascript">
+        //<![CDATA[
+        var file='/stats/count.asp';
+
+        var stats_d=new Date();
+        var stats_s=stats_d.getSeconds();
+        var stats_m=stats_d.getMinutes();
+        var stats_x=stats_s*stats_m;
+        var prdID = '[catalogid]';
+        var catID = '[catid]';
+
+        stats_f='' + escape(document.referrer); stats_f=stats_f.replace('_','----');
+        if (navigator.appName=='Netscape'){stats_b='NS';}
+        if (navigator.appName=='Microsoft Internet Explorer'){stats_b='MSIE';}
+        if (navigator.appVersion.indexOf('MSIE 3')>0) {stats_b='MSIE';}
+        stats_u='' + escape(document.URL); stats_u=stats_u.replace('_','----'); stats_w=screen.width; stats_h=screen.height;
+        stats_v=navigator.appName;
+        stats_fs = window.screen.fontSmoothingEnabled;
+        if (stats_v != 'Netscape') {stats_c=screen.colorDepth;}
+        else {stats_c=screen.pixelDepth;}
+        stats_j=navigator.javaEnabled();
+        info='w=' + stats_w + '&h=' + stats_h + '&c=' + stats_c + '&r=' + stats_f + '&u='+ stats_u + '&fs=' + stats_fs + '&b=' + stats_b + '&x=' + stats_x + '&cat=' + catID + '&prd=' + prdID;
+        document.write('<img src="' + file + '?'+info+ '" width="1" height="1" border="0" alt="stats" />');
+        //]]>
+        </script>
+        <noscript>
+            <img src="/stats/count.asp" width="90" height="30" alt="" />
+        </noscript>
+        <!--END: 3dcart stats-->
+    </div>
+
+</body>
+</html>
