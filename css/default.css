@@ -1971,14 +1971,14 @@ form.form-newsletter .form-group-email .dropdown-menu .nav-item .nav-link:hover 
 
 .social-icons a {
 	display: block;
-	height: 24px;
-	width: 24px;
-	line-height: 24px;
+	height: 30px;
+	width: 30px;
+	line-height: 34px;
 	margin: 0;
-	margin-right: 6px;
+	margin-right: 10px;
 	margin-bottom: 6px;
 	border-radius: 3px;
-	font-size: 14px;
+	font-size: 20px;
 	text-align: center;
 	background: none;
 	color: #ffffff;
