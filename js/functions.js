@@ -119,8 +119,9 @@ jQuery(document).ready(function($) {
     var upperHeaderModule = $('#footer').find('.upper-header-module').first();
     if ( upperHeaderModule.length ) {
         var upperHeaderModuleHtml = $(upperHeaderModule).html();
-        $('.main-header .upper-navigation .upper-menu-left').append(upperHeaderModuleHtml);
-        $('.main-header .upper-navigation').show();
+        $('.ll-header .site-width .header-shipping').append(upperHeaderModuleHtml);
+        // $('.main-header .upper-navigation .upper-menu-left').append(upperHeaderModuleHtml);
+        // $('.main-header .upper-navigation').show();
     }
 
     // Create Mega Menus
