@@ -1339,34 +1339,34 @@ jQuery(document).ready(function($) {
     // =============================================================================
     // 6.8 - Modal Newsletter Popup
     // =============================================================================
-    $(window).load(function() {
-        if ( $('.modal-container[data-modal-id="newsletter"]').length ) {
-            if ( $.cookie('modal-newsletter-popup') != 'hide-newsletter-popup' ) {
-                $.cookie('modal-newsletter-popup', 'display-newsletter-popup', { expires: 365, path: '/' });
-            }
-        }
+    // $(window).load(function() {
+    //     if ( $('.modal-container[data-modal-id="newsletter"]').length ) {
+    //         if ( $.cookie('modal-newsletter-popup') != 'hide-newsletter-popup' ) {
+    //             $.cookie('modal-newsletter-popup', 'display-newsletter-popup', { expires: 365, path: '/' });
+    //         }
+    //     }
 
-        setTimeout(function() {
-            // Open newsletter popup if no other popups are open
-            if ( !$('.modal-container.active').length ) {
-                showNewsletterPopup();
-            }
-        }, 500);
-    });
+    //     setTimeout(function() {
+    //         // Open newsletter popup if no other popups are open
+    //         if ( !$('.modal-container.active').length ) {
+    //             showNewsletterPopup();
+    //         }
+    //     }, 500);
+    // });
 
-    function showNewsletterPopup() {
-        if ( $('.modal-container[data-modal-id="newsletter"]').length && $.cookie('modal-newsletter-popup') == 'display-newsletter-popup' ) {
-            var modalId = 'newsletter';
-            var modalAnimation = 'fade';
-            $(document).trigger('selectlayers.modal.open', [modalId, modalAnimation]);
+    // function showNewsletterPopup() {
+    //     if ( $('.modal-container[data-modal-id="newsletter"]').length && $.cookie('modal-newsletter-popup') == 'display-newsletter-popup' ) {
+    //         var modalId = 'newsletter';
+    //         var modalAnimation = 'fade';
+    //         $(document).trigger('selectlayers.modal.open', [modalId, modalAnimation]);
 
-            setTimeout(function() {
-                $.cookie('modal-newsletter-popup', 'hide-newsletter-popup', { expires: 365, path: '/' });
-                // $.cookie('modal-newsletter-popup', 'hide-newsletter-popup', { expires: 1, path: '/' });
-                // $.cookie('modal-newsletter-popup', 'hide-newsletter-popup', { expires: 0.001, path: '/' });
-            }, 1000);
-        }
-    }
+    //         setTimeout(function() {
+    //             $.cookie('modal-newsletter-popup', 'hide-newsletter-popup', { expires: 365, path: '/' });
+    //             // $.cookie('modal-newsletter-popup', 'hide-newsletter-popup', { expires: 1, path: '/' });
+    //             // $.cookie('modal-newsletter-popup', 'hide-newsletter-popup', { expires: 0.001, path: '/' });
+    //         }, 1000);
+    //     }
+    // }
 
     // =============================================================================
     // 7.3 - Js Quantity Buttons

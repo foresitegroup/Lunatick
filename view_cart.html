@@ -607,8 +607,12 @@ jQuery(function () {
 				<!--END: shopatron-->
 			</div>
 		</fieldset>
-		<div class="clear"></div>
+		<div style="clear: both;"></div>
 	</form>
+
+	<div style="clear: both;"></div><br>
+	<br>
+
 	<script type="text/javascript">
 	//You should create the validator only after the definition of the HTML form
 	var frmvalidator = new Validator("recalculate");
@@ -656,94 +660,7 @@ jQuery(function () {
 		</div>
 		<!--END: GIFTCERTIFICATES-->
 
-		<!--START: FEATURE_MENU-->
-		<div class="row row-fullwidth-background cart-related-products">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-lg-12">
-						<div class="row-title-wrapper">
-							<h3 class="heading-1">[viewcart_feature-header]</h3>
-						</div>
-					</div>
-				</div>
-				<!--START: CATEGORY_ITEMS-->
-				<!--START: ITEM_TEMPLATE_0-->
-				<div class="product-wrapper product-carousel-wrapper item-template-0">
-
-					<div class="product-image">
-						<a href="product.asp?itemid=[catalogid]">
-							<img id="qv_[catalogid]" class="product-image-main" src="[THUMBNAIL]" alt="[name]">
-						</a>
-
-						<div class="product-background-overlay"></div>
-
-						<div class="btn-container">
-							<div class="btn-wrapper" style="display: none;">
-								<a class="btn btn-quickview" href="product.asp?itemid=[catalogid]" data-quickview-url="product.asp?lt_c=1&amp;itemid=[catalogid]&amp;qv=1&amp;">
-									<i class="fontawesome-search"></i>
-									<span class="tooltip">Quickview</span>
-								</a>
-							</div>
-							<div class="btn-wrapper">
-								<a class="btn btn-details" href="product.asp?itemid=[catalogid]">
-									<i class="fontawesome-link"></i>
-									<span class="tooltip">Details</span>
-								</a>
-							</div>
-							<div class="btn-wrapper">
-								<a class="btn btn-addtocart" href="product.asp?itemid=[catalogid]" data-addtocart-url="add_cart.asp?quick=1&amp;item_id=[catalogid]">
-									<i class="diamondicon-cart"></i>
-									<span class="tooltip">[product_addtocart]</span>
-								</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="product-details">
-						<!--START: product_review-->
-						<!--START: product_review_average-->
-						<span class="product-review-icons-container" data-rating-value="[review_average]">
-							<span class="product-review-icons product-review-icons-0"><i class="product-review-icon fontawesome-star-o"></i><i class="product-review-icon fontawesome-star-o"></i><i class="product-review-icon fontawesome-star-o"></i><i class="product-review-icon fontawesome-star-o"></i><i class="product-review-icon fontawesome-star-o"></i></span>
-							<span class="product-review-icons product-review-icons-1"><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star-o"></i><i class="product-review-icon fontawesome-star-o"></i><i class="product-review-icon fontawesome-star-o"></i><i class="product-review-icon fontawesome-star-o"></i></span>
-							<span class="product-review-icons product-review-icons-2"><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star-o"></i><i class="product-review-icon fontawesome-star-o"></i><i class="product-review-icon fontawesome-star-o"></i></span>
-							<span class="product-review-icons product-review-icons-3"><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star-o"></i><i class="product-review-icon fontawesome-star-o"></i></span>
-							<span class="product-review-icons product-review-icons-4"><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star-o"></i></span>
-							<span class="product-review-icons product-review-icons-5"><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star"></i><i class="product-review-icon fontawesome-star"></i></span>
-							<span href="#" class="product-review-count">([review_count])</span>
-						</span>
-						<!--END: product_review_average-->
-						<!--END: product_review-->
-
-						<div class="product-title">
-							<a href="product.asp?itemid=[catalogid]">[name]</a>
-						</div>
-
-						<div class="product-price">
-							<!--START: ITEMPRICE-->
-							<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE]
-							<!--END: ITEMPRICE-->
-							<!--START: SALEPRICE-->
-							<del class="price2">[ITEMPRICE]&nbsp;</del>
-							<span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE]
-							<span class="badge badge-sale">
-								<span class="badge-text">Sale</span>
-							</span>
-							<!--END: SALEPRICE-->
-						</div>
-
-						<div class="status"><!--START: product_availability-->[availability] <!--END: product_availability--><!--START: freeshippingblock-->[freeshipping]<!--END: freeshippingblock--></div>
-
-						<div class="product-description">
-							[description]
-						</div>
-					</div>
-
-				</div>
-				<!--END: ITEM_TEMPLATE_0-->
-				<!--END: CATEGORY_ITEMS-->
-			</div>
-		</div>
-		<!--START: FEATURE_MENU-->
+		<!-- Removed feature menu that generated the "YOU MAY ALSO LIKE" stuff -->
 
 		<div class="clear"></div>
 		<!--START: CATEGORY_FOOTER-->
