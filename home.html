@@ -1,24 +1,14 @@
-</div>
-<link rel="stylesheet" href="/assets/templates/diamond-jewelry-html5-premium/js/swipebox/swipebox.css">
-<script type="text/javascript" src="/assets/templates/diamond-jewelry-html5-premium/js/swipebox/jquery.swipebox.min.js"></script>
-<script type="text/javascript">
-  jQuery(document).ready(function() {
-    jQuery(".lcl-banner").swipebox({ autoplayVideos: true, videoMaxWidth : 1200 });
-  });
-</script>
-<a href="https://www.youtube.com/watch?v=3E2mCB1RChE" class="lcl-banner" style="background-image: url(assets/images/contour2-banner.jpg);"></a>
-<div class="site-width">
 <section id="home">
     <!--START: home_carousel-->
-<!--     <link rel="stylesheet" href="/assets/templates/common-html5/css/flexslider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/assets/templates/common-html5/css/flexslider.css" type="text/css" media="screen" />
     <script type="text/javascript" src="/assets/templates/common-html5/js/jquery.flexslider-min.js"></script>
 
     <div id="homeCarousel" class="flexslider">
-        <ul class="slides"> -->
+        <ul class="slides">
             <!--START: carousel-->
-            <!-- <li><a href="[link]"><img src="[image]" alt="" /></a></li> -->
+            <li><a href="[link]"><img src="[image]" alt="" /></a></li>
             <!--END: carousel-->
-<!--         </ul>
+        </ul>
     </div>
 
     <script type="text/javascript" charset="utf-8">
@@ -30,7 +20,7 @@
             keyboard: false
         });
     });
-    </script> -->
+    </script>
     <!--END: home_carousel-->
 
     <div class="home-best-sellers">
@@ -42,18 +32,20 @@
   </div>
 <div class="home-instagram">
   <h2>#lunatickcosmeticlabs</h2>
-
-  <script type="text/javascript" src="assets/templates/[template]/js/instafeed.min.js"></script>
   <script type="text/javascript">
-    var userFeed = new Instafeed({
-      get: 'user',
-      userId: '245041724',
-      accessToken: '245041724.800ce41.6b13b72f04df41c881279c3b507b1e5a',
-      limit: 8,
-      resolution: 'standard_resolution',
-      template: '<a href="{{link}}" style="background-image: url({{image}});"" target="new"></a>'
+    jQuery(document).ready(function(){
+      var jqxhr = jQuery.ajax( "https://www.instagram.com/lunatickcosmeticlabs/?__a=1&" ).done(function() {
+      }).fail(function() {
+      }).always(function(data) {
+        items = data.graphql.user.edge_owner_to_timeline_media.edges;
+        jQuery.each(items, function(n, item) {
+          if((n+1) <= 8) {
+            var data_links = '<a href="https://www.instagram.com/p/'+item.node.shortcode+'" style="background-image: url('+item.node.thumbnail_src+');"" target="new"></a>';
+            jQuery("#instafeed").append(data_links);
+          }
+        });
+      });
     });
-    userFeed.run();
   </script>
   <div id="instafeed" class="site-width"></div>
 </div>
