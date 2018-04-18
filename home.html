@@ -34,7 +34,7 @@
   <h2>#lunatickcosmeticlabs</h2>
   <script type="text/javascript">
     jQuery(document).ready(function(){
-      var jqxhr = jQuery.ajax( "https://www.instagram.com/lunatickcosmeticlabs/?__a=1&" ).done(function() {
+      var jqxhr = jQuery.ajax("https://apinsta.herokuapp.com/u/lunatickcosmeticlabs").done(function() {
       }).fail(function() {
       }).always(function(data) {
         items = data.graphql.user.edge_owner_to_timeline_media.edges;
